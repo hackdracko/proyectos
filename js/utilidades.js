@@ -3,28 +3,7 @@ $( document ).ready(function() {
 		var email = $("#txtEmail").val();
 		var usuario = $("#txtUsuario").val();
 		var password = $("#txtPassword").val();
-		var rpassword = $("#txtRPassword").val();
-		var mensaje = "";
-		var validamensaje = 0;
-		if(email == ''){
-			mensaje += "Email Vacio </br>";
-			validamensaje = 1;
-		}
-		if(usuario == ''){
-			mensaje += "usuario Vacio </br>";
-			validamensaje = 1;
-		}
-		if(password == ''){
-			mensaje += "password Vacio </br>";
-			validamensaje = 1;
-		}
-		if(rpassword == ''){
-			mensaje += "rpassword Vacio </br>";
-			validamensaje = 1;
-		}
-		if(validamensaje = 1){
-			alert(mensaje);
-		}				
+		var rpassword = $("#txtRPassword").val();			
 	});
 	$( "#btnAgregaTipo" ).on( "click", function() {
 		var tipo = $("#txtTipo").val();
